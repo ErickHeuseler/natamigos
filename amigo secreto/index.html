@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header, footer {
+            width: 100vw;
+            text-align: center;
+            padding: 0px;
+            background-color: #213145;
+            position: fixed;
+            z-index: 2;
+        }
+
+       
+
+        #logo {
+            width: 100%;
+            height: auto;
+        }
+
+        nav {
+            width: 100%;
+            overflow-x: auto;
+            position: absolute;
+            top: 30px; /* Ajuste para posicionar abaixo do cabeçalho */
+            bottom: 30px; /* Ajuste para deixar espaço para o rodapé */
+            z-index: 1;
+            
+        }
+
+        ul {
+          position: relative;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            max-height: 100%;
+            flex-direction: column; /* Alteração para direção de coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+        }
+
+        li {
+            width: 100%; /* Largura de 90% da tela */
+             /* Espaçamento entre os itens */
+        }
+
+       img {
+            width: 100%;
+            height: auto;
+           /* Altura máxima de 50% da altura da tela */
+            object-fit: cover;
+           
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 9vw;
+            background-color: #213145;
+            flex-wrap: nowrap;
+        }
+
+        footer button {
+            position: relative;
+            min-width: none;
+            width: 100%;
+            height: 100%;
+            min-height: none;
+            cursor: pointer;
+            background-color: #213145;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px;
+            font-size: 4vw; /* Ajuste a unidade de viewport conforme necessário */
+            cursor: pointer;
+        }
+
+        #customAlert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            font-size: 40px; /* Tamanho da fonte personalizado */
+        }
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="../mfuck.png" alt="Logo do Site">
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><img src="../images/1.png" alt="Imagem 1"></li>
+            <li><img src="../images/2.png" alt="Imagem 2"></li>
+            <li><img src="../images/3.png" alt="Imagem 3"></li>
+            <li><img src="../images/4.png" alt="Imagem 4"></li>
+            <li><img src="../images/5.png" alt="Imagem 5"></li>
+            <li><img src="../images/6.png" alt="Imagem 6"></li>
+            <li><img src="../images/7.png" alt="Imagem 7"></li>
+
+        </ul>
+
+        
+    <footer>
+      
+     
+        <button onclick="exibirAviso()"><i class="fas fa-utensils"></i>Dieta</button>
+        <script>
+          // Função para exibir o aviso
+          function exibirAviso() {
+              alert('A unica dieta aqui é você, que vai ser comida de 3 em 3 horas');
+          }
+      </script>
+     
+     
+  </footer>
+
+  <!-- Adicione os links para as bibliotecas de ícones aqui -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <!-- Adicione suas funções JavaScript aqui -->
+      </nav>
+</body>
+</html>
+
+      
+      
+    
+    
+
+    <!-- Outro conteúdo do site aqui -->
+
+</body>
+</html>
